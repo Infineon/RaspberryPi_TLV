@@ -11,3 +11,4 @@ while True:
     z = tlv493d.get_z()
 
     print("x: ", x, "y: ", y, "z: ",z)
+    sleep(0.5)

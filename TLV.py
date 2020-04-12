@@ -38,11 +38,12 @@ class TLV493D:
             int: X coordinate
         """
         
-        self.bx = data[0] << 4 or data[4] >> 4 and 0x0f
+        self.bx = (data[0] << 4) or ((data[4] >> 4) and 0x0f)
         
         if self.bx > 2047:
             
-            self.bx *= 0.098
+            self.bx -= 4096
+        self.bx *=0.098
             
         return self.bx
     
@@ -61,7 +62,8 @@ class TLV493D:
         
         if self.by > 2047:
             
-            self.by *= 0.098
+            self.by -= 4096
+        self.by *=0.098
             
         return self.by
     
@@ -80,7 +82,8 @@ class TLV493D:
         
         if self.bz > 2047:
             
-            self.bz *= 0.098
+            self.bz -= 4096
+        self.bz *=0.098
             
         return self.bz
     
