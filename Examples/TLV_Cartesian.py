@@ -9,6 +9,7 @@ while True:
     x = tlv493d.get_x()
     y = tlv493d.get_y()
     z = tlv493d.get_z()
+    temp = tlv493d.get_temp()
 
-    print("x: ", x, "y: ", y, "z: ",z)
+    print("x: ", x, "y: ", y, "z: ",z,"temp: ",temp)
     sleep(0.5)

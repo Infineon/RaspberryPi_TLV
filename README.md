@@ -36,37 +36,28 @@ Supported hardware --> Raspberry pi Zero/3/3B+/4B
 * Update apt
 
 ```
-
 sudo apt update
-
 ```
 
 
 * Enable i2c (Interfacing options menu and then I2C enable). For detailed steps see this [article](https://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/).
 
 ```
-
 sudo raspi-config
-
 ```
 
 
 * Install pip3
 
 ```
-
 sudo apt install python3-pip
-
 ```
-
 
 * Install smbus
 
 ```
-
 pip3 install smbus
 sudo apt-get install -y python-smbus i2c-tools
-
 ```
 
 Installing from PyPI
@@ -75,17 +66,15 @@ Installing from PyPI
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver from [PyPI](https://pypi.org/)
 
 For current user:
+
 ```
-
 pip3 install TLV493D
-
 ```
 
 To install system-wide (this may be required in some cases):
+
 ```
-
 sudo pip3 install TLV493D
-
 ```
 
 Connection diagram:

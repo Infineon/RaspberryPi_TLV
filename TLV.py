@@ -86,6 +86,21 @@ class TLV493D:
         self.bz *=0.098
             
         return self.bz
+
+
+    def get_temp(self):
+        """ Get the value of temp
+            
+            Returns:
+            
+            int: Temperature
+        """
+        self.temp = (((data[3] and 0x0f ) << 12) or (data[6] << 4 )) >> 4
+
+        self.temp = (self.temp- 315)*1.1
+
+
+        return self.temp
     
     
     
