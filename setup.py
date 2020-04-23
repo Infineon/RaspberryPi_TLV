@@ -11,7 +11,7 @@ with open(path.join(here, 'Readme.md'), encoding='utf-8') as f:
 setup(
     name='TLV493D',
 
-    version='1.0.0',
+    version='1.0.1',
 
     description='CircuitPython driver for 3D Magnetic Sensor.',
     long_description=long_description,

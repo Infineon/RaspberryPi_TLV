@@ -38,7 +38,7 @@ class TLV493D:
             int: X coordinate
         """
         
-        self.bx = (data[0] << 4) or ((data[4] >> 4) and 0x0f)
+        self.bx = (data[0] << 4) or ((data[4] >> 4) & 0x0f)
         
         if self.bx > 2047:
             
@@ -57,7 +57,7 @@ class TLV493D:
             
             int: Y coordinate
         """
-        self.by = data[1] << 4 or data[4] and 0x0f
+        self.by = data[1] << 4 or data[4] & 0x0f
 
         
         if self.by > 2047:
@@ -78,7 +78,7 @@ class TLV493D:
             int: Z coordinate
         """
         
-        self.bz = data[2] << 4 or data[5] and 0x0f
+        self.bz = data[2] << 4 or data[5] & 0x0f
         
         if self.bz > 2047:
             
