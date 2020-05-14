@@ -1,3 +1,4 @@
+[![PyPI](https://img.shields.io/pypi/v/TLV493D.svg)](https://pypi.org/project/TLV493D/)
 
 # TLV493D-A1B6-3DMagnetic-Sensor
 
