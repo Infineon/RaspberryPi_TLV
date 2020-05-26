@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/TLV493D.svg)](https://pypi.org/project/TLV493D/)
+[![PyPI](https://img.shields.io/pypi/v/TLV493D.svg)](https://pypi.org/project/TLV493D/)  [![Gitter](https://badges.gitter.im/MakerConerFor_TLV493D/community.svg)](https://gitter.im/MakerConerFor_TLV493D/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # TLV493D-A1B6-3DMagnetic-Sensor
 
